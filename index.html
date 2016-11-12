@@ -4,7 +4,7 @@
 <head>
   
   <meta charset="utf-8">
-  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
   <title>Kalkulator stroškov</title>
   <meta name="description" content="Kalkulator stroškov">
   <meta name="author" content="Stoklas Nac">
@@ -14,24 +14,94 @@
 <body>
   <!-- Navigacija -->
   <nav id="nav">
-    <li class="nav-logotip">
+    <li class="nav-logotip a">
       <a class="log" href="#">KALKUTA</a>
     </li>
-    <li class="nav-reg">
-      <a class="reg" href="#">REGISTRACIJA</a>
+    <li class="nav-reg a">
+      <a class="reg" onclick="document.getElementById('registracija').style.display='block'" href="#">REGISTRACIJA</a>
     </li>
-    <li class="nav-vpis">
-      <a class="vpis" href="#">VPIS</a>
+    <li class="nav-vpis a">
+      <a class="vpis" onclick="document.getElementById('vpis1').style.display='block'" href="#">VPIS</a>
     </li>
   </nav>
   <!-- Navigacija -->
   
+  <!-- Vpis form -->
+  <div id="vpis1" class="obrazec_main">
+    <span onclick="document.getElementById('vpis1').style.display='none'"
+    class="zapri" title="zapri obrazec">&times;</span>
+    
+    <form class="obrazec_main1 animiraj" action="poslji_podatke.php">
+      <div class="container">
+        <label><b>Uporabniško ime</b></label>
+        <input class="input" type="text" placeholder="Vnesite ime" name="ime" required>
+
+        <label><b>Geslo</b></label>
+        <input class="input" type="password" placeholder="Vnesite geslo" name="geslo" required>
+
+        <button type="submit">Vpis</button>
+        <input type="checkbox" checked="checked"> Zapomni si me
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('vpis1').style.display='none'" class="zapri2">Zapri</button>
+      </div>
+    </form>
+  </div>
+  <script>
+  </script>
+  <!-- Vpis form -->
+  
+  <!-- Registracija form -->
+  <div id="registracija" class="obrazec_main">
+    <span onclick="document.getElementById('registracija').style.display='none'"
+    class="zapri" title="zapri obrazec">&times;</span>
+    
+    <form class="obrazec_main1 animiraj" action="poslji_podatke.php">
+      <div class="container">
+        <label><b>Uporabniško ime</b></label>
+        <input class="input" type="text" placeholder="Vnesite ime" name="ime" required>
+
+        <label><b>Geslo</b></label>
+        <input class="input" type="password" placeholder="Vnesite geslo" name="geslo" required>
+        
+        <label><b>Ponovite geslo</b></label>
+        <input class="input" type="password" placeholder="Ponovno vnesite geslo" name="geslo" required>
+        
+        <label><b>Mail</b></label>
+        <input class="input" type="mail" placeholder="Vnesite mail" name="mail" required>
+
+        <button type="submit">Registracija</button>
+        <input type="checkbox" checked="checked"> Zapomni si me
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('registracija').style.display='none'" class="zapri2">Zapri</button>
+      </div>
+    </form>
+  </div>
+  <script>
+  var reg = document.getElementById('registracija');
+  var vpis = document.getElementById('vpis1');
+  window.onclick = function(event) {
+    if (event.target == reg) {
+        reg.style.display = "none";
+    }
+    if (event.target == vpis) {
+        vpis.style.display = "none";
+    }
+
+  }
+  </script>
+  <!-- Registracija form -->
+  
+
   <!-- Header landing -->
   <header>
     <div class="landing">
       <div class="right-landing">
         <h1 class="header-text1">KALKULATOR ŽIVLJENSKIH STROŠKOV</h1>
-        <p class="p-text1">Ne kockajte s prihranki</p>  <!-- <div class="kocka">f</div> -->
+        <p class="p-text1">Naj prihranki rastejo z vami</p>  <!-- <div class="kocka">f</div> -->
       </div>
       <div class="left-landing">
     
@@ -53,6 +123,7 @@
   <!-- Vsebina 1 --> 
   
   <!-- Vsebina 2 -->
+
   <section class="info-intro2">
     <div class="cont-info-intro2">
       <div class="subcont-info-intro2">
@@ -62,6 +133,8 @@
       </div>
     </div>
   </section>
+    <!-- Vsebina 2 -->
+  
   <!-- Vsebina 3 -->
     <section class="info-intro3">
     <div class="cont-info-intro3">
@@ -82,7 +155,7 @@
         <p href="#">
         <a class="glifikon-telefon" href="#"><img class="social" src="glyph/phone.png" align="middle" href="#"></a>
         </p>
-        <a class="glifikon-mail"><img class="social" src="glyph/gmail.png"></a>
+        <a class="glifikon-mail" href="#"><img class="social" src="glyph/gmail.png"></a>
         <a class="glifikon-fb" href="https://www.facebook.com/nac.stoklas"><img class="social" src="glyph/fb.png"></a>
       </div>
     </div>

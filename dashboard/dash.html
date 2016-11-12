@@ -4,7 +4,7 @@
 <head>
   
   <meta charset="utf-8">
-  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <title>Življenjski stroški dashboard</title>
   <meta name="description" content="Kalkulator stroškov dashboard">
   <meta name="author" content="Stoklas Nac">
@@ -14,14 +14,14 @@
 <body>
     <div class="nav_left">
         <nav class="dash_main_nav">
-            <a class="nav" href="#">PREGLED</a>
-            <a class="nav" href="#">PRILIVI</a>
-            <a class="nav" href="#">ODLIVI</a>
-            <a class="nav" href="#">CILJI</a>
-            <a class="nav" href="#">VIRI DOHODKA</a>
+            <a class="nav" onclick="pregled_f()" href="#">PREGLED</a>
+            <a class="nav" onclick="prilivi_f()" href="#">PRILIVI</a>
+            <a class="nav" onclick="odlivi_f()" href="#">ODLIVI</a>
+            <a class="nav" onclick="cilji_f()" href="#">CILJI</a>
+            <a class="nav" onclick="viri_dohodka_f()" href="#">VIRI DOHODKA</a>
             <hr>
-            <a class="nav" href="#">NASTAVITVE</a>
-            <a class="nav" href="#">MOJ RAČUN</a>
+            <a class="nav" onclick="nastavitve_f()" href="#">NASTAVITVE</a>
+            <a class="nav" onclick="moj_racun_f()" href="#">MOJ RAČUN</a>
         </nav>
     </div>
     <div class="dash_top_div">
@@ -38,8 +38,9 @@
             UPORABA TRI
         </div>
     </div>
-    <div class="dash_middle_div">  <!-- Div za izrisovanje grafov -->
-    <canvas id="canv"></canvas>
+    <div class="dash_middle_div">
+        <canvas id="canv"></canvas>
+        
     </div>
     <footer>
       	<p>Copyright &copy; Kalkuta 2016</p>

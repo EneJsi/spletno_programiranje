@@ -1,6 +1,6 @@
 @font-face {
     font-family: my_font;
-    src: url('fonts/time.ttf');
+    src: url('fonts/ahellya.ttf');
     
 
 }
@@ -12,14 +12,28 @@
      font-family: sreca;
     src: url('fonts/lucky_charm.ttf');
 }
+
+@-webkit-keyframes anim {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes anim {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
    
 
 body {
-    font-family: my_font;
+    font-family: 'Raleway', sans-serif;
     width: 70%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-image: url("images/fence.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.92;
 }
 
 
@@ -27,28 +41,29 @@ nav {
     height: 60px;
     width: 70%;
     position: fixed;
+    border-radius: 10px;
     background-color: #C3C3C3;
 }
 
-a {
+.a a{
     text-decoration: none;
     font-size: 30px;
 }
 
-a:visited {
+.a a:visited {
     color: #668E39;
 }
 
-a:hover {
+.a a:hover {
     color: #96B566; 
     font-size: 28px;
 }
 
-a:link {
+.a a:link {
     color: #668E39;
 }
 
-a:active {
+.a a:active {
     color: #F6FF97;
 }
 
@@ -69,7 +84,7 @@ a:active {
 }
 
 .reg:hover {
-    padding-left: 11px;
+    padding-left: 14px;
 }
 
 .nav-vpis {
@@ -89,22 +104,19 @@ header {
 
 
 .right-landing {
-    height: 100%;
     width: 25%;
-    float:right;
+    float:left;
 }
 
 
 .header-text1 {
     width: 80%;
-    float: right;
 }
 
 
 .p-text1 {
     width: 80%;
-    float: right;
-    font-size: 21px;
+    font-size: 25px;
 }
 
 .kocka {
@@ -118,9 +130,9 @@ header {
 
 .left-landing {
     height: 450px;
-    padding-left: 2%;
+    padding-right: 2%;
     width: 73%;
-    float: left;
+    float: right;
 }
 
 .left-landing img {
@@ -135,6 +147,7 @@ header {
 
 .info-intro {
     background-color: #BCE27F;
+    border-radius: 10px;
 }
 
 .info-intro-p {
@@ -166,6 +179,8 @@ header {
 .info-intro3 {
     background-color: #C3C3C3;
     text-align: center;
+    margin-top: 16px;
+    border-radius: 10px;
 }
 
 .info-intro3-p {
@@ -202,6 +217,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.95;    
 }
 
 .glifikon-mail {
@@ -214,6 +230,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.95;    
 }
 
 .glifikon-fb{
@@ -226,6 +243,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.95;
 }
 
 .kontakt-glif a {
@@ -247,4 +265,116 @@ h2 {
 
 .txt1 {
     width: 100%;
+}
+
+
+input[type=text], input[type=password], input[type=mail] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.zapri2 {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.obrazec_main {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.obrazec_main1 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.input {
+    border-radius: 10px;
+}
+
+.zapri {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.zapri:hover,
+.zapri:focus {
+    color: green;
+    cursor: pointer;
+}
+
+.registracija {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border-radius: 10px;
+    margin-left:450px;
+}
+
+.submit {
+    font-size: 35px;
+}
+
+.animiraj {
+    -webkit-animation: anim 0.6s;
+    animation: anim 0.6s
+}
+
+
+
+
+
+/* SPREMENI STIL ZA MANJSE NAPRAVE... TO BE DONE */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .zapri2 {
+       width: 100%;
+    }
 }
