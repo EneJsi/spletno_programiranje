@@ -340,7 +340,6 @@ span.psw {
     font-weight: bold;
 }
 
-/* Close button on hover */
 .zapri:hover,
 .zapri:focus {
     color: green;
@@ -363,10 +362,6 @@ span.psw {
     -webkit-animation: anim 0.6s;
     animation: anim 0.6s
 }
-
-
-
-
 
 /* SPREMENI STIL ZA MANJSE NAPRAVE... TO BE DONE */
 @media screen and (max-width: 300px) {

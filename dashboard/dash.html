@@ -25,7 +25,13 @@
         </nav>
     </div>
     <div class="dash_top_div">
-        KOLEDARCEK/NEKAJ
+        <div class="dash_top_div_cont">
+            <a class="puscica levodesno" onclick="mesec_levo_f()" href="#">&lArr;</a>
+            <div class="puscica mesecleto" style="width: 200px; color: #1A237E;">
+                <p>DECEMBER 2016</p>
+            </div>
+            <a class="puscica levodesno" onclick="mesec_desno_f()" href="#">&rArr;</a>
+        </div>
     </div>
     <div class="dash_right_div">
         <div class="dash_right_ena">
@@ -39,7 +45,17 @@
         </div>
     </div>
     <div class="dash_middle_div">
-        <canvas id="canv"></canvas>
+        <div class="action_cont">
+            <div class="prikaz_chooser">
+                SPREMENI PRIKAZ                
+            </div>
+            <div class="graph_box">
+                pie_chart
+            </div>
+        </div>
+        <div class="graph">
+            
+        </div>
         
     </div>
     <footer>

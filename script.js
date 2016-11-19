@@ -16,11 +16,3 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block";
 }
 
-var modal = document.getElementById('vpis1');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
