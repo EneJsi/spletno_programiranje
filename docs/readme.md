@@ -60,3 +60,6 @@ voljo uporabljam kar 'dummy' podatke; preprosto na roke napišem kodo ki se bo
 v drugem delu naloge generiala sama. 
 
 EneJsi
+
+Disclaimer: Vse je moje lastno delo, z izjemo regexov in podobnih malenkosti, ki
+sem jih dobil s spleta. 
