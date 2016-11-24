@@ -58,6 +58,7 @@ nav a:link {
 nav a:active {
     color: #E8EAF6;
 }
+
 /* Top div */
 a:visited {
     color: #3D5AFE;
@@ -120,10 +121,20 @@ hr {
 }
 
 .prikaz_chooser {
+    text-decoration: none;
+    background-color: #C5CAE9;
+    padding-top: 60px;
+    display: block;
     margin-left: 50px;
+    font-size: 25px;
     width: 250px;
     height: 150px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1A237E;
 }
+
 
 .graph_box {
     margin-left: 50px;

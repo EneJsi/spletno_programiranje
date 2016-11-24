@@ -119,6 +119,33 @@ header {
     font-size: 25px;
 }
 
+.slide img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.left-landing img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#slideshow {
+  margin-right: 30px;
+  margin-top: 30px;
+  float: right;
+  width: 560px;
+  height: 375px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
 .kocka {
     font-family: sreca;
     float: right;
@@ -135,11 +162,6 @@ header {
     float: right;
 }
 
-.left-landing img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 50%;
-}
 .img-cont {
     width: 100%;
     height: auto;
@@ -268,7 +290,7 @@ h2 {
 }
 
 
-input[type=text], input[type=password], input[type=mail] {
+input[type=text], input[type=password], input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
