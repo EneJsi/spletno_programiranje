@@ -8,7 +8,7 @@
   <title>Življenjski stroški dashboard</title>
   <meta name="description" content="Kalkulator stroškov dashboard">
   <meta name="author" content="Stoklas Nac">
-  <link rel="stylesheet" type="text/css" href="dash_style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/prilivi.css" media="screen" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             >PRILIVI</a>
             <a class="nav" href="odlivi.html">ODLIVI</a>
             <a class="nav" href="cilji.html">CILJI</a>
-            <a class="nav" href="viri.html">VIRI DOHODKA</a>
+            <a class="nav" href="viri_.html">VIRI DOHODKA</a>
             <hr>
             <a class="nav" href="nastavitve.html">NASTAVITVE</a>
             
@@ -45,7 +45,26 @@
             UPORABA DVA
         </div>
         <div class="dash_right_tri">
-            UPORABA TRI
+            <div class="priliv">
+                
+            DODAJANJE PRILIVOV
+            <form class="obrazec_priliv" action="#">
+              <div class="container">
+                  
+                <input class="input" type="text" placeholder="Vnesi priliv [€]" name="vsota" required>
+                
+                <select>
+                    <option value="rac1">Racun1</option>
+                    <option value="rac2">Racun2</option>
+                </select> 
+                
+                <input type="submit" value="Dodaj priliv"></input>
+      
+            </div>
+        </div>
+
+      
+    </form>
         </div>
     </div>
     <div class="dash_middle_div">

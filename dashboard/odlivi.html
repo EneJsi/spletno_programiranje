@@ -8,7 +8,7 @@
   <title>Življenjski stroški dashboard</title>
   <meta name="description" content="Kalkulator stroškov dashboard">
   <meta name="author" content="Stoklas Nac">
-  <link rel="stylesheet" type="text/css" href="dash_style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/odlivi.css" media="screen" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     border-width: 20px"
             >ODLIVI</a>
             <a class="nav" href="cilji.html">CILJI</a>
-            <a class="nav" href="viri.html">VIRI DOHODKA</a>
+            <a class="nav" href="viri_.html">VIRI DOHODKA</a>
             <hr>
             <a class="nav" href="nastavitve.html">NASTAVITVE</a>
             
@@ -45,7 +45,32 @@
             UPORABA DVA
         </div>
         <div class="dash_right_tri">
-            UPORABA TRI
+            <div class="odliv">
+                
+            DODAJANJE STROŠKOV
+            <form class="obrazec_priliv" action="#">
+              <div class="container">
+                  
+                <input class="input" type="text" placeholder="Vnesi strošek [€]" name="vsota" required>
+                
+                <input type="radio" name="kategorija" value="hrana" checked> Hrana
+                <input type="radio" name="kategorija" value="delo"> Delo
+                <input type="radio" name="kategorija" value="užitek"> Sprostitev
+                <input type="radio" name="kategorija" value="drugo"> Drugo
+                
+                
+                <select>
+                    <option value="rac1">Racun1</option>
+                    <option value="rac2">Racun2</option>
+                </select> 
+                
+                <input type="submit" value="Dodaj strošek"></input>
+      
+            </div>
+        </div>
+
+      
+    </form>
         </div>
     </div>
     <div class="dash_middle_div">
