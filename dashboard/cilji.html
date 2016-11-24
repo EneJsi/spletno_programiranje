@@ -45,10 +45,10 @@
                 DODAJ CILJ
                 <div class="izberi_racun">
 
-                        <form class="obrazec_priliv" action="#">
+                        <form class="obrazec_priliv" name="Form" action="#">
                         <div class="container">
                             
-                        <input class="input" type="text" placeholder="Vnesi ime cilja" name="imecilj" required>
+                        <input class="input" type="text" placeholder="Vnesi ime cilja" name="ime_cilj" required>
                         
                         <select>
                             <option value="" disabled selected>Izberi račun</option>
@@ -56,10 +56,10 @@
                             <option value="rac2">Racun2</option>
                         </select> 
                         
-                        <input class="input" type="text" placeholder="Vnesi višino cilja [€]" name="visinacilj" required>
-                        <input class="input" type="date" placeholder="Vnesi rok: YYYY-MM-DD" name="rokcilj" required>
+                        <input class="input" type="text" placeholder="Vnesi višino cilja [€]" name="visina_cilj" required>
+                        <input class="input" type="date" placeholder="Vnesi rok: DD-MM-YYYY"name="rokcilj" required>
                 
-                        <input type="submit" value="IZBERI ME"></input>
+                        <input type="submit" value="IZBERI ME" onclick="validate_cilj()">
                         </div>
             
                     </form>
@@ -71,12 +71,16 @@
             </div>
             <div class="transakcije">
                 <div class="cilj">
-                    <p style="color: red" href="#">Ime cilja 1</p><p>12€</p>
-                    <p>Račun: test1</p><p></p> Rok: 2016-25-11</p>
+                    <p style="color: red">Ime cilja 1</p><p>12€</p>
+                    <p>Račun: test1</p><p> Rok: 2016-25-11</p>
                 </div>
                 <div class="cilj">
-                    <p style="color: gray" href="#">Ime cilja 2</p><p>120€</p>
-                    <p>Račun: test1</p><p></p> Rok: 2017-01-01</p>
+                    <p style="color: gray">Ime cilja 2</p><p>120€</p>
+                    <p>Račun: test1</p><p> Rok: 2017-01-01</p>
+                </div>
+                <div class="cilj">
+                    <p style="color: green">Ime cilja 3</p><p>120€</p>
+                    <p>Račun: test1</p><p> Rok: 2016-25-12</p>
                 </div>
             </div>
         </div>
@@ -106,5 +110,5 @@
     <footer>
       	<p>Copyright &copy; Kalkuta 2016</p>
     </footer>
-    <script src="dash_script.js"></script>
+    <script src="js/cilji.js"></script>
 </body>

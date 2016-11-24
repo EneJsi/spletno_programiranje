@@ -30,50 +30,47 @@
             
         </nav>
     </div>
-    <div class="dash_top_div">
-        <div class="dash_top_div_cont">
-            <a class="puscica levodesno" onclick="mesec_levo_f()" href="#">&lArr;</a>
-            <div class="puscica mesecleto" style="width: 200px;">
-                <p>DECEMBER 2016</p>
-            </div>
-            <a class="puscica levodesno" onclick="mesec_desno_f()" href="#">&rArr;</a>
-        </div>
-    </div>
+
     <div class="dash_right_div">
         <div class="dash_right_ena">
-            
-                IZBERI RAČUN
-                <div class="izberi_racun">
-
-                        <form class="obrazec_priliv" action="#">
-                        <div class="container">
+            <div class="odliv">
                 
-                        <select>
-                            <option value="vse">Izberi vse</option>
-                            <option value="rac1">Racun1</option>
-                            <option value="rac2">Racun2</option>
-                        </select> 
+            DODAJ RAČUN
+            <form class="obrazec_priliv" name="Form" action="#">
+              <div class="container">
+                  
+                <input class="input" type="text" placeholder="Vnesi ime računa" name="ime_racuna" required>
+                <input class="input" type="text" placeholder="Vnesi stanje na računu [€]" name="stanje" required>
+                <input class="input" type="date" placeholder="Vnesi datum: DD-MM-YYYY" name="rokcilj" required>
                 
-                        <input type="submit" value="IZBERI ME"></input>
-                        </div>
-            
-                    </form>
+                <input type="submit" value="Dodaj strošek" onclick="validate_racun()">
+      
                 </div>
+            </form>
+            </div>
         </div>
         <div class="dash_right_dva">
-            UPORABA DVA
-        </div>
-        <div class="dash_right_tri">
-            UPORABA TRI
         </div>
     </div>
     <div class="dash_middle_div">
-        <div class="action_cont">
-
+        <div class="action_cont">            
+            <div class="naslov_cilj" style="text-align: center; font-size: 35px">
+                MOJI RAČUNI
+            </div>
+            <div id="ci1" class="cilj_main">
+                    <p><span style="color: gray">| Račun | </span>  <br>Stanje: 132€. <br>Ime računa: test1. <br>Odprt na datum: 2016-26-11.
+                    <span onclick="document.getElementById('ci1').style.display='none'"
+                    class="zapri" title="zapri obrazec">&times;</span></p>
+            </div>
+            <div id="ci2" class="cilj_main">
+                    <p><span style="color: gray">| Račun | </span>  <br>Stanje 1210€. <br>Ime računa: test1. <br>Odprt na datum: 2016-25-11.
+                    <span onclick="document.getElementById('ci2').style.display='none'"
+                    class="zapri" title="zapri obrazec">&times;</span></p>
+            </div>
         </div>
     </div>
     <footer>
       	<p>Copyright &copy; Kalkuta 2016</p>
     </footer>
-    <script src="dash_script.js"></script>
+    <script src="js/viri.js"></script>
 </body>

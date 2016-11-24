@@ -54,7 +54,7 @@
                             <option value="rac2">Racun2</option>
                         </select> 
                 
-                        <input type="submit" class="dodajrac" value="IZBERI ME"></input>
+                        <input type="submit" class="dodajrac" value="IZBERI ME">
                         </div>
             
                     </form>
@@ -64,18 +64,18 @@
             <div class="priliv">
                 
             DODAJ POLOG 
-            <form class="obrazec_priliv" action="#">
+            <form class="obrazec_priliv" name="Form" action="#">
                 <div class="container">
                   
-                <input class="input" type="text" placeholder="Vnesi datum [€]" name="vsota" required>
-                <input class="input" type="date" placeholder="Vnesi rok: YYYY-MM-DD" name="rokcilj" required>
+                <input class="input" type="text" placeholder="Vnesi višino pologa [€]" name="polog_visina" required>
+                <input class="input" type="date" placeholder="Vnesi datum: DD.MM.YYYY" name="rokcilj" required>
                 <select>
                     <option value="" disabled selected>Izberi račun</option>
                     <option value="rac1">Racun2</option>
                     <option value="rac2">Racun2</option>
                 </select> 
                 
-                <input type="submit" value="Dodaj polog"></input>
+                <input type="submit" value="Dodaj polog" onclick="validate_polog()">
       
                 </div>
             
@@ -88,12 +88,12 @@
             </div>
             <div class="transakcije">
                 <div class="trans">
-                    <p style="color: green" href="#">Polog</p><p>12€</p>
-                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                    <p style="color: green">Polog</p><p>12€</p>
+                    <p>Račun: test1</p><p> Datum: 2012-01-01</p>
                 </div>
                 <div class="trans">
-                    <p style="color: green" href="#">Polog</p><p>120€</p>
-                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                    <p style="color: green">Polog</p><p>120€</p>
+                    <p>Račun: test1</p><p> Datum: 2012-01-01</p>
                 </div>
             </div>
         </div>
@@ -123,5 +123,5 @@
     <footer>
       	<p>Copyright &copy; Kalkuta 2016</p>
     </footer>
-    <script src="dash_script.js"></script>
+    <script src="js/prilivi.js"></script>
 </body>

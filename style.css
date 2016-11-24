@@ -13,7 +13,7 @@
     src: url('fonts/lucky_charm.ttf');
 }
 
-@-webkit-keyframes anim {
+@keyframes anim {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
 }
@@ -144,15 +144,6 @@ header {
   left: 10px;
   right: 10px;
   bottom: 10px;
-}
-
-.kocka {
-    font-family: sreca;
-    float: right;
-    width: 80%;
-    font-size: 35px;
-    text-align: center;
-    padding-top: -20px;
 }
 
 .left-landing {

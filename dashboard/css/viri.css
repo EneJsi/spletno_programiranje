@@ -17,13 +17,12 @@ body {
 .nav_left {
     float: left;
     width: 20%;
-    background-color: #C5CAE9;
 }
 
 nav a {
     display:block;
     text-decoration: none;
-    background-color: #9FA8DA;
+    background-color: #D3D3D3;
     border-radius: 5px;
 }
 
@@ -56,7 +55,7 @@ nav a:link {
 }
 
 nav a:active {
-    color: #E8EAF6;
+    color: white;
 }
 
 /* Top div */
@@ -106,19 +105,15 @@ hr {
 }
 /* Sredinski div */
 .dash_middle_div {
+    position: relative;
     float:left;
     width: 65%;
     text-align: center;
+    margin-bottom: 400px;
+    padding-top: 80px;
+    
 }
 
-.action_cont {
-    display: block;
-    float: left;
-    height: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-}
 
 .prikaz_chooser {
     text-decoration: none;
@@ -144,42 +139,27 @@ hr {
 .dash_right_ena {
     width: 100%;
     margin-bottom: 5%;
-    padding-top: 35px;
-    padding-bottom: 8px;
+    padding-top: 8px;
     background-color: #D3D3D3;
     border-radius: 5px;
 }
 
 .dash_right_dva {
-    width: 100%;
-    margin-top: 5%;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    font-size: 20px;
+    height: 500px;
 }
 
-
-.dash_right_tri {
-    width: 100%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    padding-top: 125%;
-    font-size: 20px;
-    background-color: #C5CAE9;
-}
 
 input[type=submit] {
     width: 100%;
     background-color: #3D5AFE;
     color: white;
     padding: 14px 20px;
-    margin-top: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-input[type=text], select {
+input[type=text],input[type=date], select {
     width: 100%;
     padding: 12px 20px;
     margin: 10px 0;
@@ -191,9 +171,69 @@ input[type=text], select {
 
 
 
+.pregled_trans {
+    display: block;
+    border-left: solid;
+    border-right: solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.trans {
+    border: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.pregled_cilj {
+    display: block;
+    border-left: solid;
+    border-right: solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cilj {
+    border: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
 
 
 footer {
     clear: both;
     text-align: center;
+}
+
+.naslov_cilj {
+    margin-bottom: 10px;
+}
+
+.cilj_main {
+    padding: 3px;
+    width: 600px;
+    margin-left: 180px;
+    margin-bottom: 10px;
+    margin-right:200px;
+    border: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.zapri {
+    float: right;
+    padding-right: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.zapri:hover,
+.zapri:focus {
+    color: red;
+    cursor: pointer;
 }

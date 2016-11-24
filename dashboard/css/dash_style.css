@@ -17,13 +17,12 @@ body {
 .nav_left {
     float: left;
     width: 20%;
-    background-color: #D3D3D3;
 }
 
 nav a {
     display:block;
     text-decoration: none;
-    background-color: #9FA8DA;
+    background-color: #D3D3D3;
     border-radius: 5px;
 }
 
@@ -56,7 +55,7 @@ nav a:link {
 }
 
 nav a:active {
-    color: #E8EAF6;
+    color: white;
 }
 
 /* Top div */
@@ -92,7 +91,7 @@ hr {
 }
 
 .dash_top_div_cont {
-    margin-left: 37%;
+    margin-left: 42%;
 
 }
 
@@ -104,27 +103,20 @@ hr {
     float: left;
     text-decoration: none;
 }
-/* Sredinski div */
+
 .dash_middle_div {
     float:left;
     width: 65%;
     text-align: center;
 }
 
-.action_cont {
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-}
-
-
 .graph {
-    height: 500px;
-    width: 800px;
+    height: 640px;
+    width: 850px;
     display: block;
-    margin-left: auto;
+    margin-left: 65px;
     margin-right: auto;
+    margin-bottom: 20px;
     float: left;
     background-color: green;
 }

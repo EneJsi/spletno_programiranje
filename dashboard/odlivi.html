@@ -54,7 +54,7 @@
                             <option value="rac2">Racun2</option>
                         </select> 
                 
-                        <input type="submit" value="IZBERI ME"></input>
+                        <input type="submit" value="IZBERI ME">
                         </div>
             
                     </form>
@@ -64,11 +64,11 @@
             <div class="odliv">
                 
             DODAJ STROŠEK
-            <form class="obrazec_priliv" action="#">
+            <form class="obrazec_priliv" name="Form" action="#">
               <div class="container">
                   
-                <input class="input" type="text" placeholder="Vnesi datum [€]" name="vsota" required>
-                <input class="input" type="date" placeholder="Vnesi rok: YYYY-MM-DD" name="rokcilj" required>
+                <input class="input" type="text" placeholder="Vnesi višino stroška [€]" name="strosek_visina" required>
+                <input class="input" type="date" placeholder="Vnesi datum: DD-MM-YYYY"name="rokcilj" required>
                 
                 <select>
                     <option value="" disabled selected>Izberi kategorijo</option>
@@ -85,13 +85,11 @@
                     <option value="rac2">Racun2</option>
                 </select> 
                 
-                <input type="submit" value="Dodaj strošek"></input>
+                <input type="submit" value="Dodaj strošek" onclick="validate_strosek()">
       
             </div>
-        </div>
-
-      
-    </form>
+            </form>
+            </div>
         </div>
         <div class="dash_right_tri">
             <div class="pregled_trans">
@@ -99,18 +97,19 @@
             </div>
             <div class="transakcije">
                 <div class="trans">
-                    <p style="color: red" href="#">Strošek</p><p>12€</p>
-                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                    <p style="color: red">Strošek</p><p>12€</p>
+                    <p>Račun: test1</p><p> Datum: 2012-01-01</p>
                 </div>
                 <div class="trans">
-                    <p style="color: red" href="#">Strošek</p><p>120€</p>
-                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                    <p style="color: red">Strošek</p><p>120€</p>
+                    <p>Račun: test1</p><p> Datum: 2012-01-01</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="dash_middle_div">
-        <div class="action_cont">            <div class="naslov_cilj" style="text-align: center; font-size: 35px">
+        <div class="action_cont">            
+            <div class="naslov_cilj" style="text-align: center; font-size: 35px">
                 MOJI STROŠKI
             </div>
             <div id="ci1" class="cilj_main">
@@ -128,5 +127,5 @@
     <footer>
       	<p>Copyright &copy; Kalkuta 2016</p>
     </footer>
-    <script src="dash_script.js"></script>
+    <script src="js/odlivi.js"></script>
 </body>
