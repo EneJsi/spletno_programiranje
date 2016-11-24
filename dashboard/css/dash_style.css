@@ -17,7 +17,7 @@ body {
 .nav_left {
     float: left;
     width: 20%;
-    background-color: #C5CAE9;
+    background-color: #D3D3D3;
 }
 
 nav a {
@@ -61,19 +61,19 @@ nav a:active {
 
 /* Top div */
 a:visited {
-    color: #3D5AFE;
+    color: black;
 }
 
 a:hover {
-    color: #1A237E; 
+    color: black; 
 }
 
 a:link {
-    color: #3D5AFE;
+    color: black;
 }
 
 a:active {
-    color: #E8EAF6;
+    color: white;
 }
 
 
@@ -112,45 +112,21 @@ hr {
 }
 
 .action_cont {
-    display: block;
     float: left;
-    height: 650px;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
-}
-
-.prikaz_chooser {
-    text-decoration: none;
-    background-color: #C5CAE9;
-    padding-top: 60px;
-    display: block;
-    margin-left: 50px;
     width: 200px;
-    height: 130px;
-    font-size:22px;
-    border-radius: 5px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #1A237E;
-}
-
-
-.graph_box {
-    margin-left: 50px;
-    width: 200px;
-    height: 400px;
-    margin-top: 30px;
 }
 
 
 .graph {
-    height: 650px;
-    width: 700px;
+    height: 500px;
+    width: 800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    float: right;
+    float: left;
+    background-color: green;
 }
 
 /* Desni div */
@@ -160,35 +136,61 @@ hr {
     text-align: center;
 }
 
+
 .dash_right_ena {
     width: 100%;
     margin-bottom: 5%;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    font-size: 20px;
-    background-color: #C5CAE9; 
+    padding-top: 8px;
+    background-color: #D3D3D3;
+    border-radius: 5px;
 }
+
 
 .dash_right_dva {
     width: 100%;
-    margin-top: 5%;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    font-size: 20px;
+    padding-top: 8px;
 }
 
 
-.dash_right_tri {
+
+
+input[type=submit] {
     width: 100%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    padding-top: 125%;
-    font-size: 20px;
-    background-color: #C5CAE9;
+    background-color: #3D5AFE;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 
+.pregled_trans {
+    display: block;
+    border-left: solid;
+    border-right: solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
+.trans {
+    border: solid;
+    border-color: gray;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
 
 
 

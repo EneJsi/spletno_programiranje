@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <title>Življenjski stroški dashboard</title>
+  <title>Kalkulator stroškov plošča</title>
   <meta name="description" content="Kalkulator stroškov dashboard">
   <meta name="author" content="Stoklas Nac">
   <link rel="stylesheet" type="text/css" href="css/prilivi.css" media="screen" />
@@ -15,23 +15,25 @@
     <div class="nav_left">
         <nav class="dash_main_nav">
             <a class="nav cur" href="dash.html">PREGLED</a>
+            <hr>
             <a class="nav" href="prilivi.html"  style="    
     color: #3D5AFE; 
     border-style: hidden hidden hidden solid;
     border-width: 20px"
-            >PRILIVI</a>
-            <a class="nav" href="odlivi.html">ODLIVI</a>
-            <a class="nav" href="cilji.html">CILJI</a>
-            <a class="nav" href="viri_.html">VIRI DOHODKA</a>
+            >POLOG</a>
             <hr>
-            <a class="nav" href="nastavitve.html">NASTAVITVE</a>
+            <a class="nav" href="odlivi.html">STROŠEK</a>
+            <hr>
+            <a class="nav" href="cilji.html">CILJI</a>
+            <hr>
+            <a class="nav" href="viri_.html">RAČUNI</a>
             
         </nav>
     </div>
     <div class="dash_top_div">
         <div class="dash_top_div_cont">
             <a class="puscica levodesno" onclick="mesec_levo_f()" href="#">&lArr;</a>
-            <div class="puscica mesecleto" style="width: 200px; color: #1A237E;">
+            <div class="puscica mesecleto" style="width: 200px;">
                 <p>DECEMBER 2016</p>
             </div>
             <a class="puscica levodesno" onclick="mesec_desno_f()" href="#">&rArr;</a>
@@ -39,47 +41,84 @@
     </div>
     <div class="dash_right_div">
         <div class="dash_right_ena">
-            UPORABA ENA
+            
+                IZBERI RAČUN
+                <div class="izberi_racun">
+
+                        <form class="obrazec_priliv" action="#">
+                        <div class="container">
+                
+                        <select>
+                            <option value="vse">Vsi računi</option>
+                            <option value="rac1">Racun1</option>
+                            <option value="rac2">Racun2</option>
+                        </select> 
+                
+                        <input type="submit" class="dodajrac" value="IZBERI ME"></input>
+                        </div>
+            
+                    </form>
+                </div>
         </div>
         <div class="dash_right_dva">
-            UPORABA DVA
-        </div>
-        <div class="dash_right_tri">
             <div class="priliv">
                 
-            DODAJANJE PRILIVOV
+            DODAJ POLOG 
             <form class="obrazec_priliv" action="#">
-              <div class="container">
+                <div class="container">
                   
-                <input class="input" type="text" placeholder="Vnesi priliv [€]" name="vsota" required>
-                
+                <input class="input" type="text" placeholder="Vnesi datum [€]" name="vsota" required>
+                <input class="input" type="date" placeholder="Vnesi rok: YYYY-MM-DD" name="rokcilj" required>
                 <select>
-                    <option value="rac1">Racun1</option>
+                    <option value="" disabled selected>Izberi račun</option>
+                    <option value="rac1">Racun2</option>
                     <option value="rac2">Racun2</option>
                 </select> 
                 
-                <input type="submit" value="Dodaj priliv"></input>
+                <input type="submit" value="Dodaj polog"></input>
       
+                </div>
+            
+            </form>
             </div>
         </div>
-
-      
-    </form>
+        <div class="dash_right_tri">
+            <div class="pregled_trans">
+                NEDAVNE TRANSAKCIJE
+            </div>
+            <div class="transakcije">
+                <div class="trans">
+                    <p style="color: green" href="#">Polog</p><p>12€</p>
+                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                </div>
+                <div class="trans">
+                    <p style="color: green" href="#">Polog</p><p>120€</p>
+                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="dash_middle_div">
         <div class="action_cont">
-            <a class="prikaz_chooser" href="#">
-                SPREMENI PRIKAZ        
-            </a>
-            <div class="graph_box">
-                pie_chart
+            <div class="naslov_cilj" style="text-align: center; font-size: 35px">
+                MOJI POLOGI
+            </div>
+            <div id="ci1" class="cilj_main">
+                    <p><span style="color: green">| Polog | </span> Višina pologa: 12€. Račun: test1. Datum: 2016-26-11.
+                    <span onclick="document.getElementById('ci1').style.display='none'"
+                    class="zapri" title="zapri obrazec">&times;</span></p>
+            </div>
+            <div id="ci2" class="cilj_main">
+                    <p><span style="color: green">| Polog | </span> Višina pologa: 12€. Račun: test1. Datum: 2016-25-11.
+                    <span onclick="document.getElementById('ci2').style.display='none'"
+                    class="zapri" title="zapri obrazec">&times;</span></p>
+            </div>
+            <div id="ci3" class="cilj_main">
+                    <p><span style="color: green">| Polog | </span> Višina pologa: 120€. Račun: test2. Datum: 2017-01-01.
+                    <span onclick="document.getElementById('ci3').style.display='none'"
+                    class="zapri" title="zapri obrazec">&times;</span></p>
             </div>
         </div>
-        <div class="graph">
-            
-        </div>
-        
     </div>
     <footer>
       	<p>Copyright &copy; Kalkuta 2016</p>

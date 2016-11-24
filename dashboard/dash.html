@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <title>Življenjski stroški dashboard</title>
+  <title>Kalkulator stroškov plošča</title>
   <meta name="description" content="Kalkulator stroškov dashboard">
   <meta name="author" content="Stoklas Nac">
   <link rel="stylesheet" type="text/css" href="css/dash_style.css" media="screen" />
@@ -19,19 +19,22 @@
     border-style: hidden hidden hidden solid;
     border-width: 20px"
             >PREGLED</a>
-            <a class="nav" href="prilivi.html">PRILIVI</a>
-            <a class="nav" href="odlivi.html">ODLIVI</a>
-            <a class="nav" href="cilji.html">CILJI</a>
-            <a class="nav" href="viri_.html">VIRI DOHODKA</a>
             <hr>
-            <a class="nav" href="nastavitve.html">NASTAVITVE</a>
+            <a class="nav" href="prilivi.html">POLOG</a>
+            <hr>
+            <a class="nav" href="odlivi.html">STROŠEK</a>
+            <hr>
+            <a class="nav" href="cilji.html">CILJI</a>
+            <hr>
+            <a class="nav" href="viri_.html">RAČUNI</a>
+
             
         </nav>
     </div>
     <div class="dash_top_div">
         <div class="dash_top_div_cont">
             <a class="puscica levodesno" onclick="mesec_levo_f()" href="#">&lArr;</a>
-            <div class="puscica mesecleto" style="width: 200px; color: #1A237E;">
+            <div class="puscica mesecleto" style="width: 200px;">
                 <p>DECEMBER 2016</p>
             </div>
             <a class="puscica levodesno" onclick="mesec_desno_f()" href="#">&rArr;</a>
@@ -39,24 +42,45 @@
     </div>
     <div class="dash_right_div">
         <div class="dash_right_ena">
-            Lep pozdrav.
+                IZBERI RAČUN
+                <div class="izberi_racun">
+
+                        <form class="obrazec_priliv" action="#">
+                        <div class="container">
+                
+                        <select>
+                            <option value="vse">Izberi vse</option>
+                            <option value="rac1">Racun1</option>
+                            <option value="rac2">Racun2</option>
+                        </select> 
+                
+                        <input type="submit" value="IZBERI ME"></input>
+                        </div>
+            
+                    </form>
+                </div>
         </div>
         <div class="dash_right_dva">
-            UPORABA DVA
-        </div>
-        <div class="dash_right_tri">
-            UPORABA TRI
+            <div class="pregled_trans">
+                NEDAVNE TRANSAKCIJE
+            </div>
+            <div class="transakcije">
+                <div class="trans">
+                    <p style="color: red" href="#">Strošek</p><p>12€, Hrana</p>
+                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                </div>
+                <div class="trans">
+                    <p style="color: red" href="#">Strošek</p><p>120€, Drugo</p>
+                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                </div>
+                <div class="trans">
+                    <p style="color: green" href="#">Polog</p><p>120€</p>
+                    <p>Račun: test1</p><p></p> Datum: 2012-01-01</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="dash_middle_div">
-        <div class="action_cont">
-            <a class="prikaz_chooser" href="#">
-                SPREMENI PRIKAZ        
-            </a>
-            <div class="graph_box">
-                pie_chart
-            </div>
-        </div>
         <div class="graph">
             <canvas id="graph" width="772" height="227"></canvas>
         </div>

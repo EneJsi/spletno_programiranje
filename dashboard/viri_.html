@@ -5,33 +5,35 @@
   
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <title>Življenjski stroški dashboard</title>
+  <title>Kalkulator stroškov plošča</title>
   <meta name="description" content="Kalkulator stroškov dashboard">
   <meta name="author" content="Stoklas Nac">
-  <link rel="stylesheet" type="text/css" href="dash_style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/viri.css" media="screen" />
 </head>
 
 <body>
     <div class="nav_left">
         <nav class="dash_main_nav">
             <a class="nav cur" href="dash.html">PREGLED</a>
-            <a class="nav" href="prilivi.html">PRILIVI</a>
-            <a class="nav" href="odlivi.html">ODLIVI</a>
+            <hr>
+            <a class="nav" href="prilivi.html">POLOG</a>
+            <hr>
+            <a class="nav" href="odlivi.html">STROŠEK</a>
+            <hr>
             <a class="nav" href="cilji.html">CILJI</a>
+            <hr>
             <a class="nav" href="viri_.html"  style="    
     color: #3D5AFE; 
     border-style: hidden hidden hidden solid;
     border-width: 20px"
-            >VIRI DOHODKA</a>
-            <hr>
-            <a class="nav" href="nastavitve.html">NASTAVITVE</a>
+            >RAČUNI</a>
             
         </nav>
     </div>
     <div class="dash_top_div">
         <div class="dash_top_div_cont">
             <a class="puscica levodesno" onclick="mesec_levo_f()" href="#">&lArr;</a>
-            <div class="puscica mesecleto" style="width: 200px; color: #1A237E;">
+            <div class="puscica mesecleto" style="width: 200px;">
                 <p>DECEMBER 2016</p>
             </div>
             <a class="puscica levodesno" onclick="mesec_desno_f()" href="#">&rArr;</a>
@@ -39,7 +41,24 @@
     </div>
     <div class="dash_right_div">
         <div class="dash_right_ena">
-            UPORABA ENA
+            
+                IZBERI RAČUN
+                <div class="izberi_racun">
+
+                        <form class="obrazec_priliv" action="#">
+                        <div class="container">
+                
+                        <select>
+                            <option value="vse">Izberi vse</option>
+                            <option value="rac1">Racun1</option>
+                            <option value="rac2">Racun2</option>
+                        </select> 
+                
+                        <input type="submit" value="IZBERI ME"></input>
+                        </div>
+            
+                    </form>
+                </div>
         </div>
         <div class="dash_right_dva">
             UPORABA DVA
@@ -50,17 +69,8 @@
     </div>
     <div class="dash_middle_div">
         <div class="action_cont">
-            <a class="prikaz_chooser" href="#">
-                SPREMENI PRIKAZ        
-            </a>
-            <div class="graph_box">
-                pie_chart
-            </div>
+
         </div>
-        <div class="graph">
-            
-        </div>
-        
     </div>
     <footer>
       	<p>Copyright &copy; Kalkuta 2016</p>
