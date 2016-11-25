@@ -2,9 +2,12 @@ function validate_cilj(){
     var eur = document.forms["Form"]["visina_cilj"].value;
     var ime_cilja = document.forms["Form"]["ime_cilj"].value;
     //var date = document.forms["Form"]["rokcilj"].value;
+    if(eur != "")
+        validate_polog_euro(eur);
+    if(ime_cilja != ""){
+        validate_ime_cilja(ime_cilja);
+    }
     
-    validate_ime_cilja(ime_cilja)
-    validate_polog_euro(eur);
     //validate_datum(date)
 return true;
 }

@@ -14,11 +14,11 @@ na landing page-u.
 Veliko časa sem posvetil tudi stilu navigacijske vrstice v nadzorni plošči.
 Šla je skozi mnogo iteracij, kot je za pričakovati od nekoga, ki nima nobenega 
 pravega občutka za estetiko. Ker se zavedam kako pomemben je izgled aplikacije,
-sem posvetil njenemu izgledu veliko časa in moram reči da sem zadovoljen
+sem posvetil le temu veliko časa in moram reči da sem zadovoljen
 z izgledom nadzorne plošče nasploh. 
 Tu sem najbolj navdušen nad desno stranjo, v kateri se bo kasneje implementirala 
 večina funkcionalnosti.
-
+Veliko dela je vzel tudi Canvas.
 
 Kratek opis
 -----------

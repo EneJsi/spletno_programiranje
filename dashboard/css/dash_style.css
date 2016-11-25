@@ -118,7 +118,6 @@ hr {
     margin-right: auto;
     margin-bottom: 20px;
     float: left;
-    background-color: green;
 }
 
 /* Desni div */
@@ -189,4 +188,8 @@ input[type=text], select {
 footer {
     clear: both;
     text-align: center;
+}
+
+canvas { 
+    border: 1px solid black; 
 }
