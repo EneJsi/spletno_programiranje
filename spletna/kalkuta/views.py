@@ -1,17 +1,21 @@
 from django.contrib.auth.decorators import login_required
 from docutils.nodes import tip
+import logging
+stdlogger = logging.getLogger(__name__)
 
 from .forms import *
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from .models import *
 from django.utils import timezone
-
+"""Landing page view"""
 def landing(request):
     return render(request, 'kalkuta/index.html')
 
+"""Dashboard view"""
 @login_required
 def dash(request):
+    stdlogger.debug("Entering dash view")
     current_user = request.user
     if not Stanje.objects.filter(uporabnik=current_user):
         stanje = Stanje(stanje=0, uporabnik=current_user)
@@ -26,8 +30,10 @@ def dash(request):
                     'trenS': trenS}
     return render(request, 'kalkuta/dash.html', context_dict)
 
+"""Prilivi view. """
 @login_required
 def prilivi(request):
+    stdlogger.debug("Entering prilivi view")
     if request.method == 'POST':
         form = DodajPolog(request.POST)
         current_user = request.user
@@ -55,9 +61,10 @@ def prilivi(request):
 
     return render(request, 'kalkuta/prilivi.html', context_dict)
 
-
+"""Odlivi view"""
 @login_required
 def odlivi(request):
+    stdlogger.debug("Entering odlivi view")
     current_user = request.user
     if request.method == 'POST':
         form = DodajStrosek(request.POST)
@@ -84,8 +91,10 @@ def odlivi(request):
 
     return render(request, 'kalkuta/odlivi.html', context_dict)
 
+"""Cilji view"""
 @login_required
 def cilji(request):
+    stdlogger.debug("Entering cilji view")
     current_user = request.user
     if request.method == 'POST':
         form = DodajCilj(request.POST)
@@ -120,8 +129,9 @@ def cilji(request):
 
     return render(request, 'kalkuta/cilji.html', context_dict)
 
-
+"""View za registracijo"""
 def register(request):
+    stdlogger.debug("Entering register view")
     args = {}
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
