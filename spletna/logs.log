@@ -1,0 +1,111 @@
+(0.036) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /kalkuta/ HTTP/1.1" 200 6267
+"GET /static/kalkuta/style.css HTTP/1.1" 304 0
+"GET /static/kalkuta/images/1.jpg HTTP/1.1" 304 0
+"GET /static/kalkuta/glyph/phone.png HTTP/1.1" 304 0
+"GET /static/kalkuta/glyph/gmail.png HTTP/1.1" 304 0
+"GET /static/kalkuta/glyph/fb.png HTTP/1.1" 304 0
+"GET /static/kalkuta/images/fence.jpeg HTTP/1.1" 304 0
+"GET /static/kalkuta/js/script.js HTTP/1.1" 304 0
+"GET /kalkuta/login/ HTTP/1.1" 200 486
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'enejsi'; args=('enejsi',)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:24:36.972100' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:24:36.972100', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.000) BEGIN; args=None
+(0.001) UPDATE "auth_user" SET "last_login" = '2017-01-07 19:24:36.975103' WHERE "auth_user"."id" = 11; args=('2017-01-07 19:24:36.975103', 11)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "django_session" SET "session_data" = 'OTgzODY5YWQxNmViNjIwZWZkOGQ0Y2Y4NWZjNGM4MDBkOThkYjdkMDp7Il9hdXRoX3VzZXJfaWQiOiIxMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNGU3OWEwZmEyNWFjZTE4ODVlNWQ3NGNhNGViODVmMGZiMTRjZWYwMiJ9', "expire_date" = '2017-01-21 19:24:36.988110' WHERE "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'; args=('OTgzODY5YWQxNmViNjIwZWZkOGQ0Y2Y4NWZjNGM4MDBkOThkYjdkMDp7Il9hdXRoX3VzZXJfaWQiOiIxMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNGU3OWEwZmEyNWFjZTE4ODVlNWQ3NGNhNGViODVmMGZiMTRjZWYwMiJ9', '2017-01-21 19:24:36.988110', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+"POST /kalkuta/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:24:37.008123' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:24:37.008123', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE "kalkuta_transakcija"."uporabnik_id" = 11 ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(11,)
+(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+"GET /kalkuta/pregled HTTP/1.1" 200 2969
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:25:01.973780' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:25:01.973780', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(11, True)
+(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(11, True)
+"GET /kalkuta/polog HTTP/1.1" 200 3685
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:25:04.257301' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:25:04.257301', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 0) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(11, False)
+(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 0) ORDER BY "kalkuta_transakcija"."id" DESC; args=(11, False)
+"GET /kalkuta/strosek HTTP/1.1" 200 3724
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:25:08.065842' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:25:08.065842', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "kalkuta_stanje" SET "stanje" = 105.4, "uporabnik_id" = 11 WHERE "kalkuta_stanje"."id" = 3; args=(105.4, 11, 3)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "kalkuta_transakcija" ("tip", "visina", "datum", "uporabnik_id") VALUES (0, 2.0, '2017-01-07 19:25:08.074848', 11); args=[False, 2.0, '2017-01-07 19:25:08.074848', 11]
+(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 0) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(11, False)
+(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 0) ORDER BY "kalkuta_transakcija"."id" DESC; args=(11, False)
+"POST /kalkuta/strosek HTTP/1.1" 200 4138
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:36:50.770100' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:36:50.770100', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.000) SELECT "kalkuta_cilji"."id", "kalkuta_cilji"."ime", "kalkuta_cilji"."ciljno_stanje", "kalkuta_cilji"."rok", "kalkuta_cilji"."uspesnost", "kalkuta_cilji"."uporabnik_id" FROM "kalkuta_cilji" WHERE "kalkuta_cilji"."uporabnik_id" = 11 ORDER BY "kalkuta_cilji"."id" DESC LIMIT 3; args=(11,)
+(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.001) SELECT "kalkuta_cilji"."id", "kalkuta_cilji"."ime", "kalkuta_cilji"."ciljno_stanje", "kalkuta_cilji"."rok", "kalkuta_cilji"."uspesnost", "kalkuta_cilji"."uporabnik_id" FROM "kalkuta_cilji" WHERE "kalkuta_cilji"."uporabnik_id" = 11 ORDER BY "kalkuta_cilji"."id" DESC; args=(11,)
+"GET /kalkuta/cilji HTTP/1.1" 200 3584
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:36:52.136012' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:36:52.136012', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(11, True)
+(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(11, True)
+"GET /kalkuta/polog HTTP/1.1" 200 3685
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:37:35.352220' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:37:35.352220', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(11, True)
+(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(11, True)
+"GET /kalkuta/polog HTTP/1.1" 200 3685
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:37:38.387245' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:37:38.387245', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.003) BEGIN; args=None
+(0.018) INSERT INTO "kalkuta_transakcija" ("tip", "visina", "datum", "uporabnik_id") VALUES (1, 1.0, '2017-01-07 19:37:38.448287', 11); args=[True, 1.0, '2017-01-07 19:37:38.448287', 11]
+(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.000) BEGIN; args=None
+(0.013) UPDATE "kalkuta_stanje" SET "stanje" = 106.4, "uporabnik_id" = 11 WHERE "kalkuta_stanje"."id" = 3; args=(106.4, 11, 3)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(11, True)
+(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(11, True)
+"POST /kalkuta/polog HTTP/1.1" 200 4098
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:38:12.192798' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:38:12.192798', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 0) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(11, False)
+(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 0) ORDER BY "kalkuta_transakcija"."id" DESC; args=(11, False)
+"GET /kalkuta/strosek HTTP/1.1" 200 4138
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-07 19:38:14.329222' AND "django_session"."session_key" = 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7'); args=('2017-01-07 19:38:14.329222', 'wnonwgy0lhk47gge1xvqcrxmw2ifi3r7')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 11; args=(11,)
+(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "kalkuta_stanje" SET "stanje" = 103.4, "uporabnik_id" = 11 WHERE "kalkuta_stanje"."id" = 3; args=(103.4, 11, 3)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "kalkuta_transakcija" ("tip", "visina", "datum", "uporabnik_id") VALUES (0, 3.0, '2017-01-07 19:38:14.337227', 11); args=[False, 3.0, '2017-01-07 19:38:14.337227', 11]
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 0) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(11, False)
+(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 11 LIMIT 1; args=(11,)
+(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 11 AND "kalkuta_transakcija"."tip" = 0) ORDER BY "kalkuta_transakcija"."id" DESC; args=(11, False)
+"POST /kalkuta/strosek HTTP/1.1" 200 4552
