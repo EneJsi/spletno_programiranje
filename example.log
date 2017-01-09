@@ -1,0 +1,1153 @@
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 15:58:43.968115' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 15:58:43.968115', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 2787
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 15:59:10.674817' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 15:59:10.674817', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering prilivi view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, True, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, True, 2017, 1)
+INFO:django.server:"GET /kalkuta/polog HTTP/1.1" 200 3713
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 15:59:16.216500' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 15:59:16.216500', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering odlivi view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, False, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, False, 2017, 1)
+INFO:django.server:"GET /kalkuta/strosek HTTP/1.1" 200 3335
+INFO:django.server:"GET /static/kalkuta/odlivi.css HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 15:59:20.040040' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 15:59:20.040040', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering odlivi view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) BEGIN; args=None
+DEBUG:django.db.backends:(0.000) UPDATE "kalkuta_stanje" SET "stanje" = 365.0, "uporabnik_id" = 12 WHERE "kalkuta_stanje"."id" = 4; args=(365.0, 12, 4)
+DEBUG:django.db.backends:(0.000) BEGIN; args=None
+DEBUG:django.db.backends:(0.002) INSERT INTO "kalkuta_transakcija" ("tip", "visina", "datum", "uporabnik_id", "leto_trans", "mesec_trans") VALUES (0, 20.0, '2017-01-09 15:59:20.045044', 12, 2017, 1); args=[False, 20.0, '2017-01-09 15:59:20.045044', 12, 2017, 1]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, False, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, False, 2017, 1)
+INFO:django.server:"POST /kalkuta/strosek HTTP/1.1" 200 3751
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 15:59:25.146433' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 15:59:25.146433', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 2997
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO:django.server:"GET /kalkuta/ HTTP/1.1" 200 6267
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:03:38.953579'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:03:38.953579')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3033
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:04:41.824052'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:04:41.824052')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3231
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2846
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:04:44.446795'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:04:44.446795')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3231
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:04:48.822944'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:04:48.822944')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:2
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 2) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 2)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 2) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 2)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2380
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:04:50.564101'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:04:50.564101')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:1
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 3231
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:05:36.099563'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:05:36.099563')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:12
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 12)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 12)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2381
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2872
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:05:40.164266'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:05:40.164266')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:1
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 3231
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:06:08.276622'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:06:08.276622')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:2
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 2) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 2)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 2) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 2)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2380
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2876
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:06:11.509768'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:06:11.509768')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:1
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 3231
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:06:49.006948'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:06:49.006948')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:12
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 12)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 12)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2381
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2863
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:09:54.069184'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:09:54.069184')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:11
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 11) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 11)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 11) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 11)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2394
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:10:00.837126'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:10:00.837126')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:12
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 12)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 12)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2394
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:10:01.661674'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:10:01.661674')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:1
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 3244
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:10:20.208731'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:10:20.208731')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:2
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 2) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 2)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 2) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 2)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2393
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:10:21.731743'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:10:21.731743')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:1
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 3244
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:10:55.660636'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:10:55.660636')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:12
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 12)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 12)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2394
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2871
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:10:58.301391'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:10:58.301391')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:1
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:11:10.423020'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:11:10.423020')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:2
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 2) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 2)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 2) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 2)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2393
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2863
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:11:13.918384'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:11:13.918384')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:1
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:15.278544'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:15.278544')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:12
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 12)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 12)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2394
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2799
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:16.102088'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:16.102088')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:11
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 11) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 11)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 11) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 11)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2394
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:16.724502'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:16.724502')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:10
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 10) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 10)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 10) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 10)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2393
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:17.256858'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:17.256858')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:9
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 9) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 9)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 9) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 9)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2395
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:17.785209'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:17.785209')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Odstejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:8
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 8) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 8)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 8) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 8)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=-1 HTTP/1.1" 200 2392
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:20.658117'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:20.658117')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:9
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 9) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 9)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 9) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 9)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2395
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:21.223492'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:21.223492')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:10
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 10) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 10)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 10) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 10)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2393
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:21.762852'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:21.762852')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:11
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 11) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 11)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 11) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 11)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2394
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:22.357247'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:22.357247')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:12
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2016
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2016, 12)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2016 AND "kalkuta_transakcija"."mesec_trans" = 12) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2016, 12)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 2394
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:23.088734'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:23.088734')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:kalkuta.models:===============================
+DEBUG:kalkuta.models:Pristejem 1 mesec, dobim mesec:
+DEBUG:kalkuta.models:1
+DEBUG:kalkuta.models:in leto:
+DEBUG:kalkuta.models:2017
+DEBUG:kalkuta.models:===============================
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled?q=1 HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:12:24.828888'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:12:24.828888')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:14:21.022089'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:14:21.022089')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering cilji view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_cilji"."id", "kalkuta_cilji"."ime", "kalkuta_cilji"."ciljno_stanje", "kalkuta_cilji"."rok", "kalkuta_cilji"."uspesnost", "kalkuta_cilji"."uporabnik_id", "kalkuta_cilji"."leto_trans", "kalkuta_cilji"."mesec_trans" FROM "kalkuta_cilji" WHERE ("kalkuta_cilji"."uporabnik_id" = 12 AND "kalkuta_cilji"."leto_trans" = 2017 AND "kalkuta_cilji"."mesec_trans" = 1) ORDER BY "kalkuta_cilji"."id" DESC LIMIT 3; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_cilji"."id", "kalkuta_cilji"."ime", "kalkuta_cilji"."ciljno_stanje", "kalkuta_cilji"."rok", "kalkuta_cilji"."uspesnost", "kalkuta_cilji"."uporabnik_id", "kalkuta_cilji"."leto_trans", "kalkuta_cilji"."mesec_trans" FROM "kalkuta_cilji" WHERE ("kalkuta_cilji"."uporabnik_id" = 12 AND "kalkuta_cilji"."leto_trans" = 2017 AND "kalkuta_cilji"."mesec_trans" = 1) ORDER BY "kalkuta_cilji"."id" DESC; args=(12, 2017, 1)
+INFO:django.server:"GET /kalkuta/cilji HTTP/1.1" 200 4065
+INFO:django.server:"GET /static/kalkuta/cilji.css HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:14:22.522085'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:14:22.522085')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2909
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:14:39.740124'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:14:39.740124')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2880
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:14:41.096253'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:14:41.096253')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:14:41.989847'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:14:41.989847')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:15:36.083352'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:15:36.083352')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2902
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:17:01.611661'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:17:01.611661')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2899
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:17:16.731715'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:17:16.731715')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2902
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:18:43.256127'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:18:43.256127')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 200 2895
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:19:32.290688'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:19:32.290688')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering prilivi view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, True, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, True, 2017, 1)
+INFO:django.server:"GET /kalkuta/polog HTTP/1.1" 200 3713
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:19:48.142224'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:19:48.142224')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3244
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:23:13.634076'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:23:13.634076')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3520
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:23:42.913802'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:23:42.913802')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3520
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:23:56.493571'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:23:56.493571')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3520
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:24:15.114520'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:24:15.114520')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3570
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:24:23.687216'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:24:23.687216')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3570
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+INFO:django.server:"GET /kalkuta/ HTTP/1.1" 200 6267
+DEBUG:django.template:Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'kalkuta/PREGLED', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'kalkuta.urls' from 'C:\\Users\\Nac\\Desktop\\3. LETNIK\\SP\\spletna\\kalkuta\\urls.py'> (None:None) ^kalkuta/>, <RegexURLPattern landing ^$>], [<RegexURLResolver <module 'kalkuta.urls' from 'C:\\Users\\Nac\\Desktop\\3. LETNIK\\SP\\spletna\\kalkuta\\urls.py'> (None:None) ^kalkuta/>, <RegexURLPattern dash pregled>], [<RegexURLResolver <module 'kalkuta.urls' from 'C:\\Users\\Nac\\Desktop\\3. LETNIK\\SP\\spletna\\kalkuta\\urls.py'> (None:None) ^kalkuta/>, <RegexURLPattern prilivi polog>], [<RegexURLResolver <module 'kalkuta.urls' from 'C:\\Users\\Nac\\Desktop\\3. LETNIK\\SP\\spletna\\kalkuta\\urls.py'> (None:None) ^kalkuta/>, <RegexURLPattern odlivi strosek>], [<RegexURLResolver <module 'kalkuta.urls' from 'C:\\Users\\Nac\\Desktop\\3. LETNIK\\SP\\spletna\\kalkuta\\urls.py'> (None:None) ^kalkuta/>, <RegexURLPattern cilji cilji>], [<RegexURLResolver <module 'kalkuta.urls' from 'C:\\Users\\Nac\\Desktop\\3. LETNIK\\SP\\spletna\\kalkuta\\urls.py'> (None:None) ^kalkuta/>, <RegexURLPattern login ^login/$>], [<RegexURLResolver <module 'kalkuta.urls' from 'C:\\Users\\Nac\\Desktop\\3. LETNIK\\SP\\spletna\\kalkuta\\urls.py'> (None:None) ^kalkuta/>, <RegexURLPattern logout ^logout/$>], [<RegexURLResolver <module 'kalkuta.urls' from 'C:\\Users\\Nac\\Desktop\\3. LETNIK\\SP\\spletna\\kalkuta\\urls.py'> (None:None) ^kalkuta/>, <RegexURLPattern register ^register/$>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING:django.request:Not Found: /kalkuta/PREGLED
+WARNING:django.server:"GET /kalkuta/PREGLED HTTP/1.1" 404 3371
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:25:02.024692'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:25:02.024692')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3570
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:25:04.178123'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:25:04.178123')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering prilivi view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, True, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, True, 2017, 1)
+INFO:django.server:"GET /kalkuta/polog HTTP/1.1" 200 3713
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:25:58.197261'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:25:58.197261')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering prilivi view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, True, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 21; args=(12, True, 2017, 1)
+DEBUG:django.template:Exception while resolving variable 'stroski' in template 'kalkuta/prilivi.html'.
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'stroski'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'stroski'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'stroski'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: <unprintable VariableDoesNotExist object>
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, True, 2017, 1)
+INFO:django.server:"GET /kalkuta/polog HTTP/1.1" 200 4095
+INFO:django.server:"GET /static/kalkuta/prilivi.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/prilivi.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:29:58.380432'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:29:58.380432')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering prilivi view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, True, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 21; args=(12, True, 2017, 1)
+DEBUG:django.template:Exception while resolving variable 'stroski' in template 'kalkuta/prilivi.html'.
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'stroski'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'stroski'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'stroski'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Nac\Anaconda3\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: <unprintable VariableDoesNotExist object>
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, True, 2017, 1)
+INFO:django.server:"GET /kalkuta/polog HTTP/1.1" 200 4095
+INFO:django.server:"GET /static/kalkuta/prilivi.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/prilivi.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf' AND "django_session"."expire_date" > '2017-01-09 16:30:00.006513'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf', '2017-01-09 16:30:00.006513')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3570
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG:django.db.backends:(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:05.274574' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:05.274574', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3570
+INFO:django.server:"GET /static/kalkuta/dash_style.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/kalkuta/js/dash_script.js HTTP/1.1" 304 0
+DEBUG:django.db.backends:(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:06.709527' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:06.709527', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering prilivi view
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, True, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, True, 2017, 1)
+INFO:django.server:"GET /kalkuta/polog HTTP/1.1" 200 4047
+DEBUG:django.db.backends:(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:08.004388' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:08.004388', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering odlivi view
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, False, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, False, 2017, 1)
+INFO:django.server:"GET /kalkuta/strosek HTTP/1.1" 200 4077
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:09.093112' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:09.093112', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering cilji view
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_cilji"."id", "kalkuta_cilji"."ime", "kalkuta_cilji"."ciljno_stanje", "kalkuta_cilji"."rok", "kalkuta_cilji"."uspesnost", "kalkuta_cilji"."uporabnik_id", "kalkuta_cilji"."leto_trans", "kalkuta_cilji"."mesec_trans" FROM "kalkuta_cilji" WHERE ("kalkuta_cilji"."uporabnik_id" = 12 AND "kalkuta_cilji"."leto_trans" = 2017 AND "kalkuta_cilji"."mesec_trans" = 1) ORDER BY "kalkuta_cilji"."id" DESC LIMIT 3; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_cilji"."id", "kalkuta_cilji"."ime", "kalkuta_cilji"."ciljno_stanje", "kalkuta_cilji"."rok", "kalkuta_cilji"."uspesnost", "kalkuta_cilji"."uporabnik_id", "kalkuta_cilji"."leto_trans", "kalkuta_cilji"."mesec_trans" FROM "kalkuta_cilji" WHERE ("kalkuta_cilji"."uporabnik_id" = 12 AND "kalkuta_cilji"."leto_trans" = 2017 AND "kalkuta_cilji"."mesec_trans" = 1) ORDER BY "kalkuta_cilji"."id" DESC; args=(12, 2017, 1)
+INFO:django.server:"GET /kalkuta/cilji HTTP/1.1" 200 4392
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:10.011720' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:10.011720', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering odlivi view
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, False, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, False, 2017, 1)
+INFO:django.server:"GET /kalkuta/strosek HTTP/1.1" 200 4077
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:10.561087' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:10.561087', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering prilivi view
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, True, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, True, 2017, 1)
+INFO:django.server:"GET /kalkuta/polog HTTP/1.1" 200 4047
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:11.340604' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:11.340604', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3570
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:12.991701' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:12.991701', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering prilivi view
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, True, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 1 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, True, 2017, 1)
+INFO:django.server:"GET /kalkuta/polog HTTP/1.1" 200 4047
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:18.618440' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:18.618440', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering odlivi view
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 4; args=(12, False, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."tip" = 0 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, False, 2017, 1)
+INFO:django.server:"GET /kalkuta/strosek HTTP/1.1" 200 4077
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:19.574076' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:19.574076', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:kalkuta.models:Entering dash view
+DEBUG:kalkuta.models:Racunam leto
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC LIMIT 5; args=(12, 2017, 1)
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_transakcija"."id", "kalkuta_transakcija"."tip", "kalkuta_transakcija"."visina", "kalkuta_transakcija"."datum", "kalkuta_transakcija"."uporabnik_id", "kalkuta_transakcija"."leto_trans", "kalkuta_transakcija"."mesec_trans" FROM "kalkuta_transakcija" WHERE ("kalkuta_transakcija"."uporabnik_id" = 12 AND "kalkuta_transakcija"."leto_trans" = 2017 AND "kalkuta_transakcija"."mesec_trans" = 1) ORDER BY "kalkuta_transakcija"."id" DESC; args=(12, 2017, 1)
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 400.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:kalkuta.models:[0, 0, 0, 0, 0, 0, 0, 0, 15.0, 20.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+DEBUG:django.db.backends:(0.000) SELECT "kalkuta_stanje"."id", "kalkuta_stanje"."stanje", "kalkuta_stanje"."uporabnik_id" FROM "kalkuta_stanje" WHERE "kalkuta_stanje"."uporabnik_id" = 12 LIMIT 1; args=(12,)
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 200 3570
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2017-01-09 16:32:21.804557' AND "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('2017-01-09 16:32:21.804557', 'nmtirqwh8vp7d42txti92m69vo37qhjf')
+DEBUG:django.db.backends:(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 12; args=(12,)
+DEBUG:django.db.backends:(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'nmtirqwh8vp7d42txti92m69vo37qhjf'; args=('nmtirqwh8vp7d42txti92m69vo37qhjf',)
+DEBUG:django.db.backends:(0.000) BEGIN; args=None
+DEBUG:django.db.backends:(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('nmtirqwh8vp7d42txti92m69vo37qhjf'); args=('nmtirqwh8vp7d42txti92m69vo37qhjf',)
+INFO:django.server:"GET /kalkuta/logout/ HTTP/1.1" 302 0
+INFO:django.server:"GET /kalkuta/ HTTP/1.1" 200 6267
+INFO:django.server:"GET /kalkuta/pregled HTTP/1.1" 302 0
+INFO:django.server:"GET /kalkuta/login/?next=/kalkuta/pregled HTTP/1.1" 200 486
