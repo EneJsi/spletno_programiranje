@@ -1,0 +1,397 @@
+@font-face {
+    font-family: my_font;
+    src: url('fonts/ahellya.ttf');
+    
+
+}
+@font-face {
+     font-family: denar;
+    src: url('fonts/denar.ttf');
+}
+@font-face {
+     font-family: sreca;
+    src: url('fonts/lucky_charm.ttf');
+}
+
+@-webkit-keyframes anim {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes anim {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+   
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("images/fence.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.92;
+}
+
+
+nav {
+    height: 60px;
+    width: 70%;
+    position: fixed;
+    border-radius: 10px;
+    background-color: #C3C3C3;
+}
+
+.a a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.a a:visited {
+    color: #668E39;
+}
+
+.a a:hover {
+    color: #96B566; 
+    font-size: 28px;
+}
+
+.a a:link {
+    color: #668E39;
+}
+
+.a a:active {
+    color: #F6FF97;
+}
+
+.nav-logotip {
+    text-align: center;
+    float: left;
+    padding: 10px;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.nav-reg {
+    text-align: center;
+    float: right;
+    padding: 10px;
+    padding-right:30px;
+    list-style-type: none;
+}
+
+.reg:hover {
+    padding-left: 14px;
+}
+
+.nav-vpis {
+    text-align: center;
+    float: right;
+    padding: 10px;
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+
+header {
+    height: 475px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+
+.right-landing {
+    width: 25%;
+    float:left;
+}
+
+
+.header-text1 {
+    width: 80%;
+}
+
+
+.p-text1 {
+    width: 80%;
+    font-size: 25px;
+}
+
+.slide img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.left-landing img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#slideshow {
+  margin-right: 30px;
+  margin-top: 30px;
+  float: right;
+  width: 560px;
+  height: 375px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.kocka {
+    font-family: sreca;
+    float: right;
+    width: 80%;
+    font-size: 35px;
+    text-align: center;
+    padding-top: -20px;
+}
+
+.left-landing {
+    height: 450px;
+    padding-right: 2%;
+    width: 73%;
+    float: right;
+}
+
+.img-cont {
+    width: 100%;
+    height: auto;
+}
+
+.info-intro {
+    background-color: #BCE27F;
+    border-radius: 10px;
+}
+
+.info-intro-p {
+    background-color: #BCE27F;
+    font-size: 22px;
+}
+
+.subcont-info-intro {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.info-intro2 {
+    text-align: center;
+}
+
+.info-intro2-p {
+    text-align: center;
+    font-size: 22px;   
+}
+
+.subcont-info-intro2 {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.info-intro3 {
+    background-color: #C3C3C3;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+.info-intro3-p {
+    background-color: #C3C3C3;
+    text-align: center;
+    font-size: 22px;   
+}
+
+.subcont-info-intro3 {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+
+
+footer {
+    width: 100%;
+    height:200px;
+}
+
+h2 {
+    text-align: center
+}
+
+
+.glifikon-telefon {
+    float: left;
+    width: 33%;
+    padding-top: 20px;
+}
+
+.glifikon-telefon img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;    
+}
+
+.glifikon-mail {
+    float: left;
+    width: 33%;
+    padding-top: 20px;
+}
+
+.glifikon-mail img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;    
+}
+
+.glifikon-fb{
+    float: left;
+    width: 33%;
+    padding-top: 20px;
+}
+
+.glifikon-fb img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+}
+
+.kontakt-glif a {
+    float: left;
+    width: 33%;
+    padding-top: 20px;
+}
+
+.copyright {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.txt {
+    width: 33%;
+    float: left;
+}
+
+.txt1 {
+    width: 100%;
+}
+
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.zapri2 {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.obrazec_main {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.obrazec_main1 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.input {
+    border-radius: 10px;
+}
+
+.zapri {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.zapri:hover,
+.zapri:focus {
+    color: green;
+    cursor: pointer;
+}
+
+.registracija {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border-radius: 10px;
+    margin-left:450px;
+}
+
+.submit {
+    font-size: 35px;
+}
+
+.animiraj {
+    -webkit-animation: anim 0.6s;
+    animation: anim 0.6s
+}
+
+/* SPREMENI STIL ZA MANJSE NAPRAVE... TO BE DONE */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .zapri2 {
+       width: 100%;
+    }
+}

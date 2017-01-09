@@ -1,0 +1,184 @@
+{% load static %}
+<!doctype html>
+<html lang="sl">
+<head>
+  
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+  <title>Kalkulator stroškov</title>
+  <meta name="description" content="Kalkulator stroškov">
+  <meta name="author" content="Stoklas Nac">
+  <link rel="stylesheet" type="text/css" href="{% static 'kalkuta/style.css' %} " media="screen" />
+</head>
+
+<body>
+
+  <nav id="nav">
+    <li class="nav-logotip a">
+      <a class="log" href="#">KALKUTA</a>
+    </li>
+    <li class="nav-reg a">
+      <!-- onclick="document.getElementById('registracija').style.display='block'" -->
+      <a class="reg"  href="register">REGISTRACIJA</a>
+    </li>
+    <li class="nav-vpis a">
+      <!-- onclick="document.getElementById('vpis1').style.display='block'" -->
+      <a class="vpis"  href="login">VPIS</a>
+    </li>
+  </nav>
+  <!-- Navigacija -->
+  
+  <!-- Vpis form -->
+  <div id="vpis1" class="obrazec_main">
+    <span onclick="document.getElementById('vpis1').style.display='none'"
+    class="zapri" title="zapri obrazec">&times;</span>
+    
+    <form class="obrazec_main1 animiraj" action="poslji_podatke.php">
+      <div class="container">
+        <label><b>Uporabniško ime</b></label>
+        <input class="input" type="text" placeholder="Vnesite ime" name="ime" required>
+
+        <label><b>Geslo</b></label>
+        <input class="input" type="password" placeholder="Vnesite geslo" name="geslo" required>
+
+        <button type="submit">Vpis</button>
+        <input type="checkbox" checked="checked"> Zapomni si me
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('vpis1').style.display='none'" class="zapri2">Zapri</button>
+      </div>
+    </form>
+  </div>
+  <script>
+  </script>
+  <!-- Vpis form -->
+  
+  <!-- Registracija form -->
+  <div id="registracija" class="obrazec_main">
+    <span onclick="document.getElementById('registracija').style.display='none'"
+    class="zapri" title="zapri obrazec">&times;</span>
+    
+    <form class="obrazec_main1 animiraj" action="poslji_podatke.php">
+      <div class="container">
+        <label><b>Uporabniško ime</b></label>
+        <input class="input" type="text" placeholder="Vnesite ime" name="ime" required>
+
+        <label><b>Geslo</b></label>
+        <input class="input" type="password" placeholder="Vnesite geslo" name="geslo" required>
+        
+        <label><b>Ponovite geslo</b></label>
+        <input class="input" type="password" placeholder="Ponovno vnesite geslo" name="geslo" required>
+        
+        <label><b>Mail</b></label>
+        <input class="input" type="email" placeholder="Vnesite mail" name="mail" required>
+
+        <button type="submit">Registracija</button>
+        <input type="checkbox" checked="checked"> Zapomni si me
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('registracija').style.display='none'" class="zapri2">Zapri</button>
+      </div>
+    </form>
+  </div>
+  <script>
+  var reg = document.getElementById('registracija');
+  var vpis = document.getElementById('vpis1');
+  window.onclick = function(event) {
+    if (event.target == reg) {
+        reg.style.display = "none";
+    }
+    if (event.target == vpis) {
+        vpis.style.display = "none";
+    }
+
+  }
+  </script>
+  <!-- Registracija form -->
+  
+
+  <!-- Header landing -->
+  <header>
+    <div class="landing">
+      <div class="right-landing">
+        <h1 class="header-text1">KALKULATOR ŽIVLJENSKIH STROŠKOV</h1>
+        <p class="p-text1">Naj prihranki rastejo z vami</p>  <!-- <div class="kocka">f</div> -->
+      </div>
+      <div class="left-landing">
+        <div id="slideshow">
+          <div>
+            <img class="slide" src="{% static 'kalkuta/images/1.jpg' %}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script>
+    
+  </script>
+  <!-- Header landing -->
+  
+  <!-- Vsebina 1 -->
+  <section class="info-intro">
+    <div class="cont-info-intro">
+      <div class="subcont-info-intro">
+        <a class="glifikon-piggy"></a><!-- hook glifikon npr piggy -->
+        <h2 class="info-intro-heading">ČE NE VESTE V KATEREM ŽEPU JE LUKNJA, JO TEŽKO ZAKRPATE.</h2>
+        <p class="info-intro-p">S Kalkutom boste brez težav vodili evidenco svoje potrošnje in ugotovili, katere luknje lahko zakrpate.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Vsebina 1 --> 
+  
+  <!-- Vsebina 2 -->
+
+  <section class="info-intro2">
+    <div class="cont-info-intro2">
+      <div class="subcont-info-intro2">
+        <a class="glifikon-piggy2"></a><!-- hook glifikon npr piggy -->
+        <h2 class="info-intro-heading2">CE VESTE KJE DENAR ODHAJA VESTE KJE LAHKO PRIHRANITE</h2>
+        <p class="info-intro2-p">Razpisem se kak odstavek o tej super aplikaciji</p>
+      </div>
+    </div>
+  </section>
+    <!-- Vsebina 2 -->
+  
+  <!-- Vsebina 3 -->
+    <section class="info-intro3">
+    <div class="cont-info-intro3">
+      <div class="subcont-info-intro3">
+        <a class="glifikon-piggy3"></a><!-- hook glifikon npr piggy -->
+        <h2 class="info-intro-heading3">CE VESTE KJE DENAR ODHAJA VESTE KJE LAHKO PRIHRANITE</h2>
+        <p class="info-intro3-p">Razpisem se kak odstavek o tej super aplikaciji</p>
+      </div>
+    </div>
+  </section>
+  <!-- Vsebina 3 -->   
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="kontakt">
+      <div class="cont-kontakt">
+        <h2>KONTAKT</h2>
+        <a class="glifikon-telefon" href="#"><img class="social" src="{% static 'kalkuta/glyph/phone.png' %}" alt="50px"></a>
+        <a class="glifikon-mail" href="#"><img class="social" alt="50px" src="{% static 'kalkuta/glyph/gmail.png' %}"></a>
+        <a class="glifikon-fb" href="https://www.facebook.com/nac.stoklas"><img class="social" alt="50px" src="{% static 'kalkuta/glyph/fb.png' %}"></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+      	<p class="txt">+386 41 221 312</p>
+      	<p class="txt">mail@gmail.com</p>
+      	<p class="txt">Stoklas Nac</p>
+      	<p class="txt1">Copyright &copy; Kalkuta 2016</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Footer -->
+  
+  
+  <script src="{% static 'kalkuta/js/script.js' %}"></script>
+</body>
+</html>
