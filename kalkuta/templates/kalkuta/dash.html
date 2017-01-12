@@ -16,7 +16,7 @@
 <body>
     <div class="nav_left">
         {% if user.is_authenticated %}
-        <span class="header-links">Pozdravljen, {{ user.username }}.<a href="{% url 'logout' %}" style="text-decoration: none; color: blue; padding-left: 90px"> IZPIŠI ME</a></span>
+        <span class="header-links">Pozdravljen, {{ user.username }}.<a href="{% url 'logout' %}" style="text-decoration: none; color: blue; padding-left: 30px"> IZPIŠI ME</a></span>
 
         {% else %}
         {get_template("landing")}

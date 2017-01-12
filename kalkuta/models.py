@@ -32,7 +32,7 @@ class Cilji(models.Model):
 
     leto_trans = models.IntegerField(null=True)
     mesec_trans = models.IntegerField(null=True)
-    #   Vrne zadnje tri vnesene transakcije za tega uporabnika.
+
 
     def __str__(self):
         return "Cilji: ", self.ime + " Visina cilja", self.ciljno_stanje
